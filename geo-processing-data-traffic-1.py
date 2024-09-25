@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 
-def DataReportPerDay(df:pd.DataFrame,month:int, BASEDIR1:Path, BASEDIR2:Path, ):
+def DataReportPerDay(df:pd.DataFrame,month:int, BASEDIR1:Path, BASEDIR2:Path ) -> pd.DataFrame:
     BASEDIR1 = r'E:\PROMTEL-IPN\RESULTADOS_TRAFICO\data_trafico_spark\Resultados'
     gdf = gpd.read_file(os.path.join(BASEDIR1,'Final_toESRI_QoSCategorias_1y2Trim_v2.geojson'))
     
